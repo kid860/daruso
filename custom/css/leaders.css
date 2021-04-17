@@ -1,0 +1,121 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+.dropzone{
+    height: 100%;
+    width: 100%;
+    padding: 20% 0;
+}
+
+
+input[type="file"],#leader-detail{
+    display: none;
+}
+
+.size{
+    font-size:12px;
+}
+
+#leaders{
+    color: rgb(83, 83, 83);
+    cursor: context-menu;
+    width:100%;
+}
+
+.mymodal{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.788);
+    width: 100%;
+    height: 100%;
+    display: none;
+    transition: all .1s ease;
+}
+
+.leaders-cabinet {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    }
+    
+    .div1 { grid-area: 1 / 4 / 3 / 6; }
+    .div2 { grid-area: 2 / 3 / 3 / 4; }
+    .div3 { grid-area: 2 / 6 / 3 / 7; }
+    .div4 { grid-area: 3 / 3 / 4 / 4; }
+    .div5 { grid-area: 3 / 4 / 4 / 5; }
+    .div6 { grid-area: 3 / 5 / 4 / 6; }
+    .div7 { grid-area: 3 / 6 / 4 / 7; }
+    .div8 { grid-area: 4 / 3 / 5 / 4; }
+    .div9 { grid-area: 4 / 4 / 5 / 5; }
+    .div10 { grid-area: 4 / 5 / 5 / 6; }
+    .div11 { grid-area: 4 / 6 / 5 / 7; }
+    .div12 { grid-area: 5 / 3 / 6 / 4; }
+    .div13 { grid-area: 5 / 4 / 6 / 5; }
+    .div14 { grid-area: 5 / 5 / 6 / 6; }
+    .div15 { grid-area: 5 / 6 / 6 / 7; }
+    .div16 { grid-area: 6 / 3 / 7 / 4; }
+    .div17 { grid-area: 6 / 4 / 7 / 5; }
+    .div18 { grid-area: 6 / 5 / 7 / 6; }
+    .div19 { grid-area: 6 / 6 / 7 / 7; }
+    .div20 { grid-area: 7 / 3 / 8 / 4; }
+    .div21 { grid-area: 7 / 4 / 8 / 5; }
+    .div22 { grid-area: 7 / 5 / 8 / 6; }
+    .div23 { grid-area: 7 / 6 / 8 / 7; }
+    .div24 { grid-area: 8 / 3 / 9 / 4; }
+    .div25 { grid-area: 8 / 4 / 9 / 5; }
+    .div26 { grid-area: 8 / 5 / 9 / 6; }
+    .div27 { grid-area: 8 / 6 / 9 / 7; }
+
+
+.leaders-judicial {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    }
+    
+.leaders-judicial.div1 { grid-area: 1 / 3 / 3 / 5;  }
+.leaders-judicial.div2 { grid-area: 3 / 3 / 4 / 4; }
+.leaders-judicial.div3 { grid-area: 3 / 4 / 4 / 5; }
+
+.leaders-uscr {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    }
+    
+    .leaders-uscr.div1 { grid-area: 1 / 4 / 3 / 6; }
+    .leaders-uscr.div2 { grid-area: 3 / 4 / 4 / 5; }
+    .leaders-uscr.div3 { grid-area: 3 / 5 / 4 / 6; }
+    .leaders-uscr.div4 { grid-area: 4 / 4 / 5 / 5; }
+    .leaders-uscr.div5 { grid-area: 4 / 5 / 5 / 6; }
+
+.leader-container {
+    position: relative;
+    padding: 2%;
+    border: 2.2px solid black;
+    border-style: dashed;
+}
+
+.leader-image{
+    opacity: 1;
+    display: block;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.leader-nav ul a {
+    font-family: 'Anton', sans-serif;
+    color: rgb(196, 196, 196);
+}
+
